@@ -7,22 +7,22 @@
             </blockquote>
         </div>
 
-        <div class="list" ng-show="topic.id">
+        <ion-list ng-show="topic.id">
             <div class="item item-divider item-text-wrap">
                 <h2>{{ topic.title }}</h2>
                 <p>{{ topic.description }}</p>
             </div>
-            <a class="item item-avatar item-text-wrap" ng-repeat="message in messages">
+
+            <ion-item ng-repeat="message in messages" type="item-text-wrap" class="item-avatar">
                 <img src="http://www.gravatar.com/avatar/{{ message.email | gravatar }}?size=60">
                 <div>
-                    <!-- TODO
-                    <button type="button" class="close pull-right" ng-show="createdMessage(message)" ng-click="delete(message)">&times;</button> -->
                     <strong>{{ message.user }}</strong>
                     <small class="text-muted" am-time-ago="message.time"></small>
                 </div>
                 <p>{{ message.message }}</p>
-            </a>
-        </div>
+                <ion-option-button class="button-assertive" ng-click="delete(message)">Delete</ion-option-button>
+            </ion-item>
+        </ion-list>
     </ion-content>
 
     <form class="post-message" role="form" ng-submit="save(message)" >
