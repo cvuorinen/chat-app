@@ -17,6 +17,7 @@
     "angular-cookies": "~1.2.26",
     "angular-resource": "~1.2.26",
     "angular-moment": "~0.8.2",
-    "angular-md5": "~0.1.7"
+    "angular-md5": "~0.1.7",
+    "lodash": "~2.4.1"
   }
 }

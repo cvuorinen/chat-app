@@ -1,0 +1,13 @@
+<div class="jumbotron" ng-controller="UserCtrl">
+    <h2>Welcome to W3 Chat</h2>
+
+    <p class="lead">Type a username to begin. <br/> Add email to show your Gravatar (optional).</p>
+
+    <p><input type="text" ng-model="user.name" placeholder="Name or nick"/></p>
+
+    <div class="alert alert-danger" ng-show="submitted && !user.name">Username required</div>
+
+    <p><input type="email" ng-model="user.email" placeholder="Email (for Gravatar)"/></p>
+
+    <p><a class="btn btn-lg btn-success" ng-click="setUser()"><span class="glyphicon glyphicon-ok"></span> Begin</a></p>
+</div>

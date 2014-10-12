@@ -7,7 +7,7 @@
     <title>W3 Chat</title>
 
     <link rel="stylesheet" href="/components/ionic/release/css/ionic.min.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/main.css" />
 
     <script src="/components/ionic/release/js/ionic.min.js"></script>
     <script src="/components/angular/angular.js"></script>
@@ -15,17 +15,31 @@
     <script src="/components/angular-sanitize/angular-sanitize.js"></script>
     <script src="/components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="/components/ionic/release/js/ionic-angular.min.js"></script>
+    
+    <script src="/components/angular-cookies/angular-cookies.min.js"></script>
+    <script src="/components/angular-resource/angular-resource.min.js"></script>
+    <script src="/components/moment/min/moment.min.js"></script>
+    <script src="/components/angular-moment/angular-moment.min.js"></script>
+    <script src="/components/angular-md5/angular-md5.min.js"></script>
+    <script src='/components/lodash/dist/lodash.underscore.min.js'></script>
 
     <!-- cordova.js is served from localhost to ensure the correct version -->
     <script src="http://localhost/cordova.js"></script>
     <script src="/components/steroids-js/steroids.js"></script>
 
     <script src="/js/app.js"></script>
-    <script src="/js/controllers.js"></script>
-    <script src="/js/services.js"></script>
+    <script src="/js/controllers/main.js"></script>
+    <script src="/js/controllers/messages.js"></script>
+    <script src="/js/controllers/topics.js"></script>
+    <script src="/js/controllers/topic-form.js"></script>
+    <script src="/js/controllers/user.js"></script>
+    <script src="/js/services/message.js"></script>
+    <script src="/js/services/selected-topic.js"></script>
+    <script src="/js/services/topic.js"></script>
+    <script src="/js/services/user.js"></script>
 </head>
-<body ng-app="starter" animation="slide-left-right-ios7">
-    <ion-nav-bar class="bar-dark nav-title-slide-ios7">
+<body ng-app="chatClientApp" animation="slide-left-right-ios7">
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
         <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
             Back
         </ion-nav-back-button>

@@ -1,0 +1,14 @@
+<div class="pull-right">
+    <a class="btn btn-primary" href="#/tab/topics/new"><span class="glyphicon glyphicon-plus"></span> New topic</a>
+</div>
+<h2>Topics</h2>
+<table class="table">
+    <tr ng-repeat="topic in topics">
+        <td>
+            <h3><a href="" ng-click="selectTopic(topic)">{{ topic.title }}</a></h3>
+            <p class="text-muted">{{ topic.description }}</p>
+            <a href="#/tab/topics/{{ topic.id }}">Edit</a> -
+            <a href="" class="text-danger" ng-click="delete(topic)">Delete</a>
+        </td>
+    </tr>
+</table>
