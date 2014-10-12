@@ -1,14 +1,19 @@
-<div class="pull-right">
-    <a class="btn btn-primary" href="#/tab/topics/new"><span class="glyphicon glyphicon-plus"></span> New topic</a>
-</div>
-<h2>Topics</h2>
-<table class="table">
-    <tr ng-repeat="topic in topics">
-        <td>
-            <h3><a href="" ng-click="selectTopic(topic)">{{ topic.title }}</a></h3>
-            <p class="text-muted">{{ topic.description }}</p>
-            <a href="#/tab/topics/{{ topic.id }}">Edit</a> -
-            <a href="" class="text-danger" ng-click="delete(topic)">Delete</a>
-        </td>
-    </tr>
-</table>
+<ion-view>
+    <ion-content class="padding topics">
+        <div class="pull-right">
+
+        </div>
+        <div class="list">
+            <div class="item item-divider item-button-right">
+                <h2>Topics</h2>
+                <a class="button button-small button-positive icon-left ion-plus" href="#/tab/topics/new">New topic</a>
+            </div>
+            <div class="item item-text-wrap" ng-repeat="topic in topics">
+                <h2><a href="" class="positive" ng-click="selectTopic(topic)">{{ topic.title }}</a></h2>
+                <p class="text-muted">{{ topic.description }}</p>
+                <a href="#/tab/topics/{{ topic.id }}" class="positive">Edit</a> -
+                <a href="" class="assertive" ng-click="delete(topic)">Delete</a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
