@@ -23,6 +23,7 @@ angular.module('chatClientApp', [
     })
 
     .value('pollInterval', 3000)
+    .value('apiHost', 'http://chat.w-create.com')
 
     .config(function($stateProvider, $urlRouterProvider) {
 
@@ -46,7 +47,7 @@ angular.module('chatClientApp', [
                 views: {
                     'tab-main': {
                         templateUrl: 'templates/main.html',
-                        controller: 'MainCtrl'
+                        controller: 'UserCtrl'
                     }
                 }
             })
