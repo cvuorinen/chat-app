@@ -2,7 +2,16 @@ a {
     text-decoration: none;
 }
 
-.topics .item-divider h2 {
+.text-muted {
+    color: #999;
+}
+
+.item h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item-divider h2 {
     margin: 0;
     padding: 0;
     line-height: 26px;
@@ -16,20 +25,7 @@ a {
     line-height: 26px;
 }
 
-.topics .item h2 {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-ul.messages > li > .header {
-    margin-bottom: 15px;
-}
-
-ul.messages > li > .header > p {
-    color: #666;
-}
-
-ul.messages .gravatar {
-    float: left;
-    margin-right: 15px;
+.bar.post-message .button-small {
+    font-size: 12px;
+    line-height: 12px;
 }
