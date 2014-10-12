@@ -13,6 +13,10 @@
   "dependencies": {
     "steroids-js": "3.x",
     "angular": "~1.2.26",
-    "ionic": "~1.0.0"
+    "ionic": "~1.0.0",
+    "angular-cookies": "~1.2.26",
+    "angular-resource": "~1.2.26",
+    "angular-moment": "~0.8.2",
+    "angular-md5": "~0.1.7"
   }
 }
